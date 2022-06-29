@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Assignment (Lists)</title>
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Sniglet" />
+        <style>
+            h3 { font-family: Sniglet; font-size: 17px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 23px; margin: 0;}
+            .assignment-lists{
+                margin: auto;
+                justify-content: space-around;
+                display: flex;
+                padding-bottom: 3rem;
+            }
+            .assignment-lists ol li{
+                padding: 0.5rem 0rem
+            }
+            .boton-volver{
+                border-radius: .5rem;  
+                text-align: -webkit-center;
+            }
+            .boton-volver a{
+                text-decoration: none;
+                color: #fffffe;
+                font-weight: bold;
+                
+                letter-spacing: 0.5rem;
+            }
+            .contenido-volver{
+                background-color: #eebbc3;
+                font-size: medium;
+                padding: 1.5rem;
+                border-radius: .5rem;
+                border: 0.25rem;
+                font-size: xx-large;
+            }
+        </style>
+    </head>
+    <body style="background-color: #232946; padding: 0 !important; display: flex; flex-direction: column;">
+        <div class="assignment-lists" style="background-color: white; flex-direction: column; margin: 0px 30rem; margin-top: 5rem;">
+            <div>
+                <h1 style="display: flex; place-content: space-around; background-color: white; margin-top:3rem;">HTML Assignments</h1>
+            </div>
+            <div style="padding: 0 10rem;">
+                <ol style="padding: 0;">
+                    <li> 
+                        <a href="../lists/a.html" style="text-decoration: none;">Read more about <strong>HTML</strong> and try to answer as many questions as you can from the
+                            <strong>HTML - Terminology & Definitions file,</strong> which you can find attached in the email.</a>
+                        
+                        </li>
+                    <li>Assignment(Lists):            
+                        <ol type="a">
+                            <li>
+                             <a href="../lists/a.html" style="text-decoration: none;">An unordered shopping list of your favorite foods</a>
+                            </li>
+                            <li>
+                             <a href="../lists/b.html" style="text-decoration: none;">An ordered list of todo’s you need to get done today</a>
+                            </li>
+                            <li>
+                             <a href="../lists/c.html" style="text-decoration: none;">An unordered list inside of an ordered list, of places you’d like to visit someday</a>
+                            </li>
+                            <li>
+                             <a href="../lists/d.html" style="text-decoration: none;">An ordered list inside of an unordered list, of your all time top 5 favorite videogames or movies</a>  
+                            </li>
+                     </ol>
+                    </li>
+                    <li><a href="../index.html" style="text-decoration: none;">Assignment(Links & Images):</a>
+                        <ol type="a">
+                            <li>Create a new directory named <strong><em>links-and-images</em></strong></li>
+                            <li>Within that directory, create a new file named <strong><em>index.html</em></strong></li>
+                            <li>Fill in the usual  <strong>HTML boilerplate</strong></li>
+                            <li>Set the title to <strong><em>“Links & Images”</em></strong></li>
+                            <li>Finally, add the following h1 to the body: <code>&lt;h1&gt;Homepage&lt;/h1&gt;</code></li>
+                            <li>Create another HTML file named <strong><em>about.html</em></strong></li>
+                            <li>Back in the index page, add the following anchor element below the <code>&lt;h1&gt;</code>
+                                element: 
+                                <code>
+                                    &lt;a href=”https://theuselessweb.com/”&gt; click me &lt;/a&gt;
+                                    <br>
+                                    &lt;a href="about.html"&gt; About&lt;/a&gt;
+                                </code>
+                            </li>
+                            <li>Open the index file in a browser and click on the About link to make sure it is all
+                                wired together correctly. Clicking the link should go to the empty about page you
+                                just created (you can fill it in if you like)</li>
+                            <li>Create a directory named pages within the links-and-images directory and move
+                                the about.html file into this new directory. Refresh the index page in the browser
+                                and then click on the about link. It will now be broken. This is because the
+                                location of the About page file has changed. To fix this, you just need to update
+                                the about link href value to include the pages directory since that is the new
+                                location of the about file relative to the index file. 
+                                <code>
+                                    &lt;ahref="./pages/about.html"&gt;About&lt;/a&gt;
+                                </code>
+                            </li>
+                            <li>In many cases, this will work just fine; however, you can still run into unexpected
+                                issues with this approach. Prepending <code>./</code> before the link will in most cases
+                                prevent such issues. By adding <code>./</code> you are specifying to your code that it should
+                                start looking for the file/directory relative to the current directory. You can also
+                                add a link to get back from the About page to your homepage</li>
+                            <li>To use images on your own websites, you can use a relative path:
+                                <ol type="i">
+                                    <li>
+                                        Create a new directory named images within the links-and-images project
+
+                                    </li>
+                                    <li>
+                                        Next, download any image <code>.jpg/.png</code> and move it into the images directory you just created
+                                    </li>
+                                    <li>
+                                        Rename the image to <code>first-img.jpg/.png</code>
+                                    </li>
+                                    <li>
+                                        Add the image to the index.html file: 
+                                        <br/>
+                                        <code>&lt;img src="images/first-img.jpg"&gt;</code>
+                                    </li>
+                                    <li>
+                                        Save the index.html file and open it in a browser to view your image in all its glory. Remember to use <code>./</code> before the <code>images/first-img.jpg</code> if your image isn’t loading
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                As a bit of practice, add an alt attribute to the first-img you added to thelinks-and-images project.
+
+                            </li>
+                        </ol>
+                    </li>
+                    <li><a href="../../index.html" style="text-decoration: none;">Assignment(Main HTML project): </a>
+                        For presentation make a few page presentation website about your hobby/favorite books/movies etc. Your website should contain a homepage with a link to go inside to the page where your material should be presented in list form, with links leading to pages with the description(text & image) of your chosen subject. As an added bonus, you can make each list element into a link, leading to the page where additional information about said subject can be found(images are always welcomed, just don't over do it :D)
+                    </li>
+                 </ol>
+            </div>
+        </div>
+        <div class="boton-volver" style="padding-bottom: 5rem;">
+            <a href="../../index.html" class="">
+                <h3><span class="contenido-volver">back to homepage</span></h3>
+            </a>
+        </div>
+    </body>
+</html>
+

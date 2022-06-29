@@ -2,16 +2,65 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8"/>
-        <title>Assignment (Lists)</title>
+        <title>About</title>
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Sniglet" />
         <style>
+            
+            h1 { font-family: Sniglet; font-size: 10rem; font-style: normal; font-variant: normal; font-weight: 700; line-height: 23px; text-align-last: center; color: #63646f ;} 
+            h3 { font-family: Sniglet; font-size: 17px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 23px; margin: 0; } 
             .assignment-lists ol li{
                 padding-bottom: .5rem
             }
+            .grilla{
+                display: grid;
+                grid-template-columns: min-content min-content;
+                gap: 2rem 2rem;
+                justify-content: center;
+                margin-bottom: 5rem;
+                
+            }
+            .grilla img{
+                padding: 2rem;
+            }
+            .grilla-item{
+                border-radius: 1rem;
+                background-color: #f5f4f2;
+                
+            }
+            .boton-volver{
+                border-radius: .5rem;  
+                text-align: -webkit-center;
+            }
+            .boton-volver a{
+                text-decoration: none;
+                color: #fffffe;
+                font-weight: bold;
+                letter-spacing: 0.5rem;
+            }
+            .contenido-volver{
+                background-color: #eebbc3;
+                font-size: medium;
+                padding: 1.5rem;
+                border-radius: .5rem;
+                border: 0.25rem;
+                font-size: xx-large;
+                margin-top: 5rem;
+            }
         </style>
     </head>
-    <body>
-        <h1>Hola mundo</h1>
-        <a href="../index.html">back to homepage</a>
+    <body style="background-color:  #f7e1cd ;">
+        <h1>About</h1>
+        <div class="grilla">
+            <div class="grilla-item"><a href="https://github.com/Omanaite"><img src="../images/icons8-github-64.png"class=""></img></a></div>
+            <div class="grilla-item"><a href="https://discord.gg/TgaDmVfJkv"><img src="../images/icons8-discord-64.png" class=""></img></a></div>
+            <div class="grilla-item"><a href="https://www.facebook.com/oucast/"><img src="../images/icons8-facebook-64.png" class=""></img></a></div>
+            <div class="grilla-item"><a href="https://www.linkedin.com/in/pchandia/"><img src="../images/icons8-linkedin-circled-64.png" class=""></img></a></div>
+        </div>
+        <div class="boton-volver" style="padding-bottom: 5rem;">
+            <a href="../../index.html" class="">
+                <h3><span class="contenido-volver">back to homepage</span></h3>
+            </a>
+        </div>
     </body>
 </html>
 

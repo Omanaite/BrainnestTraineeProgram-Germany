@@ -1,51 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8"/>
-        <title>Links & Images</title>
-        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Sniglet" />
-        <style>
-            h1 { font-family: Sniglet; font-size: 10rem; font-style: normal; font-variant: normal; font-weight: 700; line-height: 23px; text-align-last: center; color: #eebbc3;} 
-            h3 { font-family: Sniglet; font-size: 17px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 23px; margin: 0;} 
-            p { font-family: Sniglet; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 23px; } 
-            blockquote { font-family: Sniglet; font-size: 17px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 23px; } 
-            pre { font-family: Sniglet; font-size: 11px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 23px; }
-        </style>
-        <style>
-            .grid-container {
-              display: grid;
-              grid-template-columns: auto auto;
-              gap: 50px 50px;
-              padding: 50px;
-            }
-            .grid-container a{
-                font-size: xx-large;
-                text-decoration: none;
-                color: #fffffe;
-            }
-            .grid-container :hover{
-                
-                box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
-            }
-            .grid-item {
-              background-color: rgba(255, 255, 255, 0.8);
-              padding: 20px;
-              font-size: 30px;
-              text-align: center;
-              border: none!important;
-            }
-            </style>
-    </head>
-    <body style="background-color: #b8c1ec;">
-        <div style="background-color: #fffffe; padding: 5rem 0rem;">
-            <h1>Homepage</h1>
-        </div>
-        <div class="grid-container">
-            <h3><a href="./links-and-images/pages/about.html"><div class="grid-item" style="background-color: #232946; border-radius: 7.5px; ">About me</div></a></h3>
-            <h3><a href="./links-and-images/pages/hobby.html" style="color: #232946;"><div class="grid-item" style="background-color: #b8c1ec; border-radius: 7.5px; border: 1px solid #fffffe!important;">Hobby</div></a></h3>
-            <h3><a href="./links-and-images/pages/movies.html" style="color: #232946;"><div class="grid-item" style="background-color: #eebbc3; border-radius: 7.5px; border: none!important;">Movies</div></a></h3>
-            <h3><a href="./links-and-images/pages/assignments.html" style="color: #232946;"><div class="grid-item" style="background-color: #fffffe; border-radius: 7.5px; border: none!important;">Assignments</div></a></h3>
-          </div>
-    </body>
-</html>
 
+<head>
+    <meta charset="UTF-8" />
+    <title>Links & Images</title>
+    <link rel="stylesheet" type="text/css" href="/links-and-images/css/style.css" />
+</head>
+
+<body>
+    <div class="header-top bg-dark">
+        <div class="header-logo">
+            <span class="header-logo-text">
+                Header Logo
+            </span>
+        </div>
+        <div class="hero-secondary-text">
+            <a>header link one</a>
+            <a>header link two</a>
+            <a>header link tree</a>
+        </div>
+    </div>
+    <div class="header-mid bg-dark">
+        <div class="header-mid-left">
+            <span class="hero-main-text">
+                This website is awesome
+            </span>
+            <p class="hero-secondary-text-p">
+                This website has some subtext that goes here under the 
+                the main title. It's a smaller font and the color is lower
+                contrast
+            </p>
+            <button class="btn-signup">
+                <strong>Sign up</strong>
+            </button>
+        </div>
+        <div class="header-mid-right">
+            <img src="./links-and-images/images/header-img.jpg" alt="This is an apartment"/>
+        </div>
+    </div>
+    <div class="body-cntnt-top">
+        <div class="body-cntnt-1">
+            <span class="header-inf-text">
+                Some random information.
+            </span>
+        </div>
+        <div class="body-cntnt-2">
+            <div class="body-grid">
+                <div class="body-item-grid">
+                    <img src="/links-and-images/images/apartment-1.jpg" alt="Beautifull apartment"/>
+                </div>
+                <div class="body-item-grid">
+                    <img src="/links-and-images/images/apartment-2.jpg" alt="Beautifull apartment"/>
+                </div>
+                <div class="body-item-grid">
+                    <img src="/links-and-images/images/apartment-3.jpg" alt="Beautifull apartment"/>
+                </div>
+                <div class="body-item-grid">
+                    <img src="/links-and-images/images/apartment-4.jpg" alt="Beautifull apartment"/>
+                </div>
+                <div class="body-item-grid-2 hero-secondary-text-item-grid-2">
+                    <p>this is some subtext under an illustration or image</p>
+                </div>
+                <div class="body-item-grid-2 hero-secondary-text-item-grid-2">
+                    this is some subtext under an illustration or image
+                </div>
+                <div class="body-item-grid-2 hero-secondary-text-item-grid-2">
+                    this is some subtext under an illustration or image
+                </div>
+                <div class="body-item-grid-2 hero-secondary-text-item-grid-2">
+                    this is some subtext under an illustration or image
+                </div>
+            </div>
+
+        </div>
+        
+    </div>
+    <div class="body-cntnt-mid quote-bg-color">
+        <div class="body-cntnt-3">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard 
+            </p>
+        </div>
+        <div class="sign">
+            <strong>-Mark</strong>
+        </div>
+    </div>
+    <div class="body-cntnt-bottom">
+        <div class="call-to-action">
+            <div class="call-to-action-left">
+                <span>
+                    Call to action! It's time!
+                </span>
+                <p>
+                    Sign up for our products by clicking that button right over there!
+                </p>
+            </div>
+            <div class="call-to-action-right">
+                <button class="btn-signup-body-bottom">
+                    Sign up
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="footer bg-dark">
+        <span>Copyright &#169;</span>
+    </div>
+</body>
+
+</html>

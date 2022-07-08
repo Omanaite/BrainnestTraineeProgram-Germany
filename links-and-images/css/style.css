@@ -2,29 +2,36 @@
     font-family: "Roboto-Black";
     src: url(/font/Roboto-Black.ttf);
 }
+
 @font-face {
     font-family: "Roboto-Thin";
     src: url(/font/Roboto-Thin.ttf);
 }
+
 @font-face {
     font-family: "Roboto-Bold";
     src: url(/font/Roboto-Bold.ttf);
 }
+
 @font-face {
     font-family: "Roboto-Light";
     src: url(/font/Roboto-Light.ttf);
 }
+
 @font-face {
     font-family: "Roboto-LightItalic";
     src: url(/font/Roboto-LightItalic.ttf);
 }
-body{
+
+body {
     margin: 0 0;
 }
-.bg-dark{
+
+.bg-dark {
     background-color: #1F2937;
 }
-.hero-main-text{
+
+.hero-main-text {
     font-size: 48px;
     color: #F9FAF8;
     padding-right: 6rem;
@@ -32,12 +39,14 @@ body{
     font-weight: bold;
     margin-bottom: 1rem;
 }
-.header-logo-text{
+
+.header-logo-text {
     font-size: 24px;
     color: #F9FAF8;
     font-family: 'Roboto-Black', Verdana, Geneva, Tahoma, sans-serif;
 }
-.hero-secondary-text-p{
+
+.hero-secondary-text-p {
     font-family: "Roboto-Thin", Verdana, Geneva, Tahoma, sans-serif;
     font-size: 18px;
     color: #E5E7EB;
@@ -45,68 +54,81 @@ body{
     padding-right: 5rem;
     margin: 0;
 }
-.hero-secondary-text-item-grid-2{
+
+.hero-secondary-text-item-grid-2 {
     font-family: "Roboto-Light", Verdana, Geneva, Tahoma, sans-serif;
     font-size: 18px;
     font-weight: bold;
     padding-top: .5rem;
 }
 
-.hero-secondary-text{
+.hero-secondary-text {
     font-family: "Roboto-Thin", Verdana, Geneva, Tahoma, sans-serif;
     font-size: 18px;
     color: #E5E7EB;
     font-weight: bold;
 }
+
 .hero-secondary-text a:nth-child(2) {
     padding: 0 .75rem;
 }
-.button-header{
+
+.button-header {
     background-color: #3882F6;
 }
-.header-inf-text{
+
+.header-inf-text {
     font-family: "Roboto-Bold", Verdana, Geneva, Tahoma, sans-serif;
     font-size: 36px;
     color: #1F2937;
     padding: 1.5rem 0;
 }
-.quote-bg-color{
+
+.quote-bg-color {
     background-color: #E5E7EB;
 }
-.quote-text{
+
+.quote-text {
     font-size: 36px;
     font-style: italic;
     color: #1F2937;
 }
-.header-top{
+
+.header-top {
     display: flex;
     padding: 0rem 26rem;
     justify-content: space-between;
     height: 4rem;
     align-items: center;
 }
-.header-links{
+
+.header-links {
     align-self: center;
 }
-.header-mid{
+
+.header-mid {
     display: flex;
     padding: 5rem 26rem;
     justify-content: space-between;
- 
+
 }
-.header-mid-left{
+
+.header-mid-left {
     width: 50%;
     padding-right: 0rem;
 }
-.header-mid-right{
+
+.header-mid-right {
     width: 50%;
     text-align: end;
 }
-.header-mid-right img{
+
+.header-mid-right img {
     width: 100%;
     height: 80%;
 }
-.btn-signup{
+
+.btn-signup {
     background-color: #3882F6;
     border: none;
     border-radius: 0.5rem;
@@ -116,104 +138,123 @@ body{
     font-family: "Roboto-Bold", Verdana, Geneva, Tahoma, sans-serif;
     font-size: larger;
 }
-.body-cntnt-1{
+
+.body-cntnt-1 {
     display: flex;
     flex-direction: row;
     padding: 0rem 5rem;
     justify-content: center;
 }
-.body-cntnt-top{
+
+.body-cntnt-top {
     display: flex;
     flex-direction: column;
     padding: 0 26rem;
     justify-content: space-between;
     margin-top: 1rem;
 }
-.body-cntnt-2{
+
+.body-cntnt-2 {
     display: flex;
     flex-direction: row;
     padding: 0 0;
     justify-content: center;
-    padding-bottom: 3.5rem;    
+    padding-bottom: 3.5rem;
 }
-.body-cntnt-top{
+
+.body-cntnt-top {
     margin: 0 0;
     padding: 3rem 33rem;
 }
-.body-cntnt-mid p{
+
+.body-cntnt-mid p {
     padding: 0;
     margin: 0;
 }
-.body-cntnt-mid .sign{
+
+.body-cntnt-mid .sign {
     font-family: "Roboto-Bold";
     font-size: 20px;
     text-align: end;
 }
-.body-cntnt-mid{
+
+.body-cntnt-mid {
     margin: 0 0;
     padding: 7rem 33rem;
 }
-.body-cntnt-3{
+
+.body-cntnt-3 {
     font-family: "Roboto-LightItalic", Verdana, Geneva, Tahoma, sans-serif;
     font-size: 36px;
     color: #1F2937;
 }
-.body-grid{
+
+.body-grid {
     display: grid;
     grid-template-columns: auto auto auto auto;
     padding: 1rem 0;
     column-gap: 0rem;
     row-gap: 1rem;
 }
-.body-item-grid{
+
+.body-item-grid {
     text-align: center;
     place-self: center;
 }
-.body-item-grid img{
+
+.body-item-grid img {
     width: 9.5rem;
     height: 9.5rem;
     border-radius: 0.8rem;
     border: 0.3rem solid #3882F6;
 }
-.body-item-grid-2{
+
+.body-item-grid-2 {
     text-align: center;
     padding: 0rem 1.6rem;
 }
+
 .body-item-grid-2 p {
     padding: 0;
     margin: 0;
 }
-.body-cntnt-bottom{
+
+.body-cntnt-bottom {
     margin: 0 0;
     padding: 5.5rem 26rem;
     border-radius: 1rem;
 }
-.call-to-action{
+
+.call-to-action {
     display: flex;
     background-color: #3882F6;
     border-radius: .5rem;
     justify-content: space-evenly;
     padding: 3rem 0;
-    
+
 }
-.call-to-action-left span{
+
+.call-to-action-left span {
     font-family: "Roboto-Bold";
     font-size: 20px;
     color: #E5E7EB;
 }
-.call-to-action-left p{
+
+.call-to-action-left p {
     font-family: "Roboto-Thin", Verdana, Geneva, Tahoma, sans-serif;
     font-size: 18px;
     color: #E5E7EB;
     font-weight: bold;
     padding-top: 0;
     padding-right: 5rem;
-    margin: 0;    
+    margin: 0;
 }
-.call-to-action-right{
+
+.call-to-action-right {
     align-self: center;
 }
-.btn-signup-body-bottom{
+
+.btn-signup-body-bottom {
     background-color: transparent;
     color: #E5E7EB;
     border: 2px solid #F9FAF8;
@@ -223,7 +264,8 @@ body{
     font-family: "Roboto-Bold", Verdana, Geneva, Tahoma, sans-serif;
     font-size: larger;
 }
-.footer{
+
+.footer {
     font-family: "Roboto-Thin", Verdana, Geneva, Tahoma, sans-serif;
     font-size: 18px;
     color: #E5E7EB;

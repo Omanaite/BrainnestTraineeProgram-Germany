@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>CSS - Terminology & Definitions</title>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Sniglet" />
+    <style>
+        h3 {
+            font-family: Sniglet;
+            font-size: 17px;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: 700;
+            line-height: 23px;
+            margin: 0;
+        }
+
+        .assignment-lists {
+            margin: auto;
+            justify-content: space-around;
+            display: flex;
+            padding-bottom: 3rem;
+        }
+
+        .assignment-lists ol li {
+            padding: 0.5rem 0rem
+        }
+
+        .boton-volver {
+            border-radius: .5rem;
+            text-align: -webkit-center;
+        }
+
+        .boton-volver a {
+            text-decoration: none;
+            color: #fffffe;
+            font-weight: bold;
+
+            letter-spacing: 0.5rem;
+        }
+
+        .contenido-volver {
+            background-color: #eebbc3;
+            font-size: medium;
+            padding: 1.5rem;
+            border-radius: .5rem;
+            border: 0.25rem;
+            font-size: xx-large;
+        }
+    </style>
+</head>
+
+<body style="background-color: #232946; padding: 0 !important; display: flex; flex-direction: column;">
+    <div class="assignment-lists"
+        style="background-color: white; flex-direction: column; margin: 0px 30rem; margin-top: 5rem;">
+        <div>
+            <h1 style="display: flex; place-content: space-around; background-color: white; margin-top:3rem;">CSS -
+                Terminology & Definitions</h1>
+        </div>
+        <div style="padding: 0 10rem;">
+            <p>
+                1. What are the main differences between external, internal, and inline CSS?</br>
+                -The external comes of remote server, internal of your own server and inline puted directly in the HTML code</br>
+                2. What is the syntax for class and ID selectors?</br>
+                - Classes with dot (.randomClass) and ID with #</br>
+                3. How would you apply a single rule to two different selectors?</br>
+                - Separating with coma</br>
+                4. Given an element that has an id of title and a class of primary, how would you use both attributes for a single rule?</br>
+                - #randomID, .randomClass{color: #FFFFF;}</br>
+                5. What does the descendant combinator do?</br>
+                - Combines two selectors following rule of cascade father continuing with children</br>
+                6. Between a rule that uses one class selector and a rule that uses three type selectors, which rule has the higher specificity?</br>
+                - Class selector has the higher specifity</br>
+                7. From inside to outside, what is the order of box-model properties?</br>
+                - Content, padding, border, margin</br>
+                8.What does the box-sizing CSS property do?</br>
+                - Sets how the total width and height of an element is calculated.</br>
+                9. What is the difference between the standard and alternative box model?</br>
+                - In the standard does not consider border to represent width and height space but alternative yes</br>
+                10. Would you use margin or padding to create more space between 2 elements?</br>
+                - Yes</br>
+                11. Would you use margin or padding to create more space between the contents of an element and its border?</br>
+                - Yes</br>
+                12. Would you use margin or padding if you wanted two elements to overlap each other?</br>
+                - No</br>
+                13. What is the difference between a block element and an inline element?</br>
+                - Block elements get all space in line and inline element not</br>
+                14. What is the difference between an inline element and an inline-block element?</br>
+                - Inline just use the necesary space but inline-block inherits some properties of a block then can have a width and height</br>
+                15. Is an h1 block or inline?</br>
+                - Inline</br>
+                16. Is button block or inline?</br>
+                - Inline</br>
+                17. Is div block or inline?</br>
+                - Block</br>
+                18. Is span block or inline?</br>
+                -Inline</br>
+                19. What’s the difference between a flex container and a flex item?</br>
+                - Flex Container is the parent element while Flex Item represents the children. the children can grow and move inside of flex container</br>
+                20. How do you create a flex item?</br>
+                - The default value of the flex property is: flex-grow: 0, flex-shrink: 1, flex-basis: 0% or flex: 0, 1,0%;</br>
+                21. What are the 3 values defined in the shorthand flex property?</br>
+                22. How do you make flex items arrange themselves vertically instead of horizontally?</br>
+                23. What is the difference between justify-content and align-items?</br>
+                24. How do you use flexbox to completely center a div inside a flex container?</br>
+                25. What’s the difference between justify-content: space-between and justify-content: space-around?</br>
+            </p>
+        </div>
+    </div>
+    <div class="boton-volver" style="padding-bottom: 5rem;">
+        <a href="../pages/assignments-css.html" class="">
+            <h3><span class="contenido-volver">back to assignments</span></h3>
+        </a>
+    </div>
+</body>
+
+</html>

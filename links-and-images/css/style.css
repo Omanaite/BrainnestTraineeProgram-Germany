@@ -207,6 +207,7 @@ body {
     height: 9.5rem;
     border-radius: 0.8rem;
     border: 0.3rem solid #3882F6;
+    box-sizing: border-box;
 }
 
 .body-item-grid-2 {

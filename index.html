@@ -1,51 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8"/>
-        <title>Links & Images</title>
-        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Sniglet" />
-        <link rel="stylesheet" type="text/css" href="/css/style.css" />
-        <style>
-            h1 { font-family: Sniglet; font-size: 10rem; font-style: normal; font-variant: normal; font-weight: 700; line-height: 23px; text-align-last: center; color: #eebbc3;} 
-            h3 { font-family: Sniglet; font-size: 17px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 23px; margin: 0;} 
-            p { font-family: Sniglet; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 23px; } 
-            blockquote { font-family: Sniglet; font-size: 17px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 23px; } 
-            pre { font-family: Sniglet; font-size: 11px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 23px; }
-        </style>
-        <style>
-            .grid-container {
-              display: grid;
-              grid-template-columns: auto auto;
-              gap: 50px 50px;
-              padding: 50px;
-            }
-            .grid-container a{
-                font-size: xx-large;
-                text-decoration: none;
-                color: #fffffe;
-            }
-            .grid-container :hover{
-                
-                box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
-            }
-            .grid-item {
-              background-color: rgba(255, 255, 255, 0.8);
-              padding: 20px;
-              font-size: 30px;
-              text-align: center;
-              border: none!important;
-            }
-            </style>
-    </head>
-    <body style="background-color: #b8c1ec;">
-        <div style="background-color: #fffffe; padding: 5rem 0rem;">
-            <h1>Homepage</h1>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Links & Images</title>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Sniglet" />
+    <link rel="stylesheet" type="text/css" href="./links-and-images/css/style.css" />
+</head>
+
+<body>
+    <div class="header-homepage">
+        <img class="img-yo" src="./links-and-images/images/yo.jpg" />
+        <h1>Pablo Chandía</h1>
+    </div>
+    <div class="body-homepage">
+        <div class="resumen-bio">
+            <p>
+                Bienvenidos, este sitio ha sido creado para que conozcas mis gustos y aficiones.</br></br>
+                Me gusta mucho el skate pero ultimamente tengo mas responsabilidades que de costumbre y solo practico
+                un par de horas a la semana. A ver veamos que mas, me gusta todo tipo de musica excluyendo el heavy metal,
+                aun que me guste mucho la musica no se tocar ningun instrumento ya que nunca me llamaron la atención.</br></br>
+                Tambien me gustan los video juegos, algunos de estos son League of Legends, Call of duty, Super Mario, Donkey Kong, 
+                Killer Instic, Zelda.</br></br>
+
+                Actualmente me encuentro estudiando un nueva area en mi profesión, esta se conoce como Desarrollo Front-End y 
+                me ha parecido genial.
+                Estoy viajando hace un año y he visitado Paises bajos, Alemania y España. Espero con el tiempo poder seguir 
+                viajando y con esto crecer personalmente, tambien conocer gente buena onda y experiencias enriquecedoras.
+            </p>
         </div>
+
+
         <div class="grid-container">
-            <h3><a href="./links-and-images/pages/about.html"><div class="grid-item" style="background-color: #232946; border-radius: 7.5px; ">About me</div></a></h3>
-            <h3><a href="./links-and-images/pages/hobby.html" style="color: #232946;"><div class="grid-item" style="background-color: #b8c1ec; border-radius: 7.5px; border: 1px solid #fffffe!important;">Hobby</div></a></h3>
-            <h3><a href="./links-and-images/pages/movies.html" style="color: #232946;"><div class="grid-item" style="background-color: #eebbc3; border-radius: 7.5px; border: none!important;">Movies</div></a></h3>
-            <h3><a href="./links-and-images/pages/assignments-landing.html" style="color: #232946;"><div class="grid-item" style="background-color: #fffffe; border-radius: 7.5px; border: none!important;">Assignments</div></a></h3>
-          </div>
-    </body>
+            <div class="social-container">
+                <h2>Social</h2>
+                <div class="grilla">
+                    <div class="grilla-item"><a href="https://github.com/Omanaite"><img src="./links-and-images/images/icons8-github-64.png"class=""></img></a></div>
+                    <div class="grilla-item"><a href="https://discord.gg/TgaDmVfJkv"><img src="/links-and-images/images/icons8-discord-64.png" class=""></img></a></div>
+                    <div class="grilla-item"><a href="https://www.facebook.com/oucast/"><img src="/links-and-images/images/icons8-facebook-64.png" class=""></img></a></div>
+                    <div class="grilla-item"><a href="https://www.linkedin.com/in/pchandia/"><img src="/links-and-images/images/icons8-linkedin-64.png" class=""></img></a></div>
+                </div>
+                
+            </div>
+            <div class="assig-container">
+                <a href="./links-and-images/pages/assignments-landing.html" style="color: #232946;">
+                    <div class="grid-item" style="background-color: #fffffe; border-radius: 7.5px; border: none!important;">
+                        Assignments</div>
+                </a>
+            </div>
+        
+
+
+
+            
+        </div>
+        <div></div>
+    </div>
+</body>
+
 </html>

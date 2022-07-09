@@ -249,3 +249,125 @@ body {
     text-align: center;
     padding: 2rem 0;
 }
+
+/* --- HOMEPAGE STYLE --- */
+
+.header-homepage {
+    background-color: #10111D;
+    display: flex;
+    justify-content: center;
+}
+
+.img-yo {
+    width: 10%;
+    height: 10%;
+    align-self: center;
+    padding: 2rem;
+    border-radius: 50%;
+}
+
+.body-homepage {
+    display: flex;
+    flex-direction: column;
+    background-color: #10111D;
+
+}
+
+.resumen-bio {
+    color: #F9FAF8;
+    background-color: #00966B;
+    width: 40%;
+    align-self: center;
+    padding: 3rem;
+    border-radius: 1rem;
+    margin: 3rem;
+    position: absolute;
+    top: 30%;
+}
+
+.resumen-bio p {
+    font-family: "Lato-Regular", Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 1px;
+
+}
+.social-container{
+    align-self: center;
+    justify-content: center;
+    width: 50%;
+}
+.social-container h2{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.grilla{
+    display: grid;
+    grid-template-columns: min-content min-content;
+    gap: 2rem 2rem;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+.grilla img{
+    padding: 2rem;
+}
+.grilla-item{
+    border-radius: 1rem;
+    background-color: #f5f4f2;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.assig-container{
+    width: 50%;
+    place-self: center;
+
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3rem;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 23px;
+    text-align-last: center;
+    color: white;
+    align-self: center;
+
+}
+
+.grid-container {
+    width: 100rem;
+    height: 20rem;
+    display: flex;
+    align-self: center;
+    padding: 5rem;
+    padding-top: 10rem;
+    background-color: #f1e3d0;
+    margin-top: 23rem;
+    margin-bottom: 5rem;
+    border-radius: 1rem;
+    place-content: center;
+
+}
+
+.grid-container a {
+    font-size: xx-large;
+    text-decoration: none;
+    color: #fffffe;
+}
+
+.grilla-item:hover {
+
+    box-shadow: rgba(78, 78, 78, 0.1) 0px 10px 50px;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    border: none !important;
+    font-weight: bold;
+}
+
+.grid-item:hover{
+    box-shadow: rgba(78, 78, 78, 0.1) 0px 10px 50px; 
+}

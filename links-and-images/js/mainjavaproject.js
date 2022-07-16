@@ -41,7 +41,7 @@ function computerPlay() {
 function playRound(playerSelection, computerSelection) {
   if (playerSelection === "rock") {
     if (computerSelection === "rock") {
-      console.log("Draw!");
+      console.log("Tie!!!");
     } else if (computerSelection === "paper") {
       lose = lose + 1;
       console.log("You lose! Paper beats rock.");
@@ -54,7 +54,7 @@ function playRound(playerSelection, computerSelection) {
       win = win + 1;
       console.log("You win! Paper beats rock.");
     } else if (computerSelection === "paper") {
-      console.log("Draw!");
+      console.log("Tie!!!");
     } else {
       lose = lose + 1;
       console.log("You lose! Scissors beats paper.");
@@ -67,7 +67,7 @@ function playRound(playerSelection, computerSelection) {
       win = win + 1;
       console.log("You win! Scissors beats paper.");
     } else {
-      console.log("Draw!");
+      console.log("Tie!!!");
     }
   }
 }

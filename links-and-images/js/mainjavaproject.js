@@ -36,8 +36,8 @@ function playerSelection() {
 }
 
 function computerPlay() {
-  let random = ["rock", "paper", "scissors"];
-  return random[Math.floor(Math.random() * 3)];
+  let randomize = ["rock", "paper", "scissors"];
+  return randomize [Math.floor(Math.random() * 3)];
 }
 
 function playRound(playerSelection, computerSelection) {

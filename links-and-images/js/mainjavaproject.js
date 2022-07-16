@@ -25,14 +25,13 @@ function game() {
 function playerSelection() {
   var userPlay = "";
   do {
-    userPlay = prompt("Choose your option (rock, paper, or scissors)");
-    var lowerUserPlay = userPlay.toLowerCase();
+    userPlay = prompt("Choose your option (rock, paper, or scissors)").toLowerCase();
   } while (
-    lowerUserPlay !== "rock" &&
-    lowerUserPlay !== "paper" &&
-    lowerUserPlay !== "scissors"
+    userPlay !== "rock" &&
+    userPlay !== "paper" &&
+    userPlay !== "scissors"
   );
-  return lowerUserPlay;
+  return userPlay;
 }
 
 function computerPlay() {

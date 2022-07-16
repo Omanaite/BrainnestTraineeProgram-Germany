@@ -7,20 +7,17 @@ function game() {
     let computerSelection = computerPlay();
     playRound(playerSelectione, computerSelection);
   }
-
-
-    console.log("Has won " + win + " rounds of 5");
-    console.log("You lose " + lose + " rounds of 5");
-    if (win > lose) {
-      console.log("You have won the Game");
-    } else if (lose > win) {
-      console.log("You have lost the Game");
-    } else if (lose === win) {
-      console.log("No winners");
-    }
-    win = 0;
-    lose = 0;
-  
+  console.log("Has won " + win + " rounds of 5");
+  console.log("You lose " + lose + " rounds of 5");
+  if (win > lose) {
+    console.log("You have won the Game");
+  } else if (lose > win) {
+    console.log("You have lost the Game");
+  } else if (lose === win) {
+    console.log("No winners");
+  }
+  win = 0;
+  lose = 0;
 }
 
 function playerSelection() {
@@ -32,17 +29,16 @@ function playerSelection() {
     lowerUserPlay !== "rock" &&
     lowerUserPlay !== "paper" &&
     lowerUserPlay !== "scissors"
-  ); //prompt user for rock, scissors, or paper.
+  );
   return lowerUserPlay;
 }
 
 function computerPlay() {
-  //computer generates a random answer.
   let random = ["rock", "paper", "scissors"];
   return random[Math.floor(Math.random() * 3)];
 }
+
 function playRound(playerSelection, computerSelection) {
-  //plays a round of the game.
   if (playerSelection === "rock") {
     if (computerSelection === "rock") {
       console.log("Draw!");

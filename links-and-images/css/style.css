@@ -335,7 +335,6 @@ h1 {
 
 .grid-container {
     width: 100rem;
-    height: 20rem;
     display: flex;
     align-self: center;
     padding: 5rem;

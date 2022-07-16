@@ -7,8 +7,10 @@ function game() {
     let computerSelection = computerPlay();
     playRound(playerSelectione, computerSelection);
   }
+
   console.log("Has won " + win + " rounds of 5");
   console.log("You lose " + lose + " rounds of 5");
+
   if (win > lose) {
     console.log("You have won the Game");
   } else if (lose > win) {
@@ -23,7 +25,7 @@ function game() {
 function playerSelection() {
   var userPlay = "";
   do {
-    userPlay = prompt("rock, paper, or scissors?");
+    userPlay = prompt("Choose your option (rock, paper, or scissors)");
     var lowerUserPlay = userPlay.toLowerCase();
   } while (
     lowerUserPlay !== "rock" &&

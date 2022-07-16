@@ -36,7 +36,7 @@ function playerSelection() {
 }
 
 function computerPlay() {
-  let randomize = ["rock", "paper", "scissors"];
+  let randomize = ["rock", "paper", "scissors"]; 
   return randomize [Math.floor(Math.random() * 3)];
 }
 

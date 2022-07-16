@@ -1,6 +1,6 @@
-//var split = userIn.replace(/ /g, '').split('');
 var win = 0;
 var lose = 0;
+
 function game() {
   for (let i = 0; i < 5; i++) {
     let playerSelectione = playerSelection();
@@ -8,8 +8,7 @@ function game() {
     playRound(playerSelectione, computerSelection);
   }
 
-  const myTimeout = setTimeout(validWinner, 1500);
-  function validWinner() {
+
     console.log("Has won " + win + " rounds of 5");
     console.log("You lose " + lose + " rounds of 5");
     if (win > lose) {
@@ -21,7 +20,7 @@ function game() {
     }
     win = 0;
     lose = 0;
-  }
+  
 }
 
 function playerSelection() {

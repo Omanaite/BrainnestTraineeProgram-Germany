@@ -1,5 +1,14 @@
 var counterRound = 1;
 
+function addEventListeners (){
+  document.querySelectorAll('.btnSelection').forEach(link => link.addEventListener('click', () => {
+      playerSelection(link.id);
+  }));
+  document.querySelectorAll('.btnAgain').forEach(link => link.addEventListener('click', () => {
+      playAgain();
+  }));
+}
+
 function startFirstStep() {
     document.getElementById("start-game").classList.toggle("hidden");
     document.getElementById("roundContainer").classList.toggle("hidden");
@@ -13,14 +22,7 @@ function roundSelection(rS) {
     addEventListeners();
 }
 
-function addEventListeners (){
-    document.querySelectorAll('.btnSelection').forEach(link => link.addEventListener('click', () => {
-        playerSelection(link.id);
-    }));
-    document.querySelectorAll('.btnAgain').forEach(link => link.addEventListener('click', () => {
-        playAgain();
-    }));
-}
+
 
 function playerSelection(option) {
     document.getElementById("playerSelectionContainer").classList.toggle("hidden");

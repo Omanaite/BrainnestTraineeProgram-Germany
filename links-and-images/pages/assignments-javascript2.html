@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Assignment CSS</title>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Sniglet" />
+    <style>
+        h3 {
+            font-family: Sniglet;
+            font-size: 17px;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: 700;
+            line-height: 23px;
+            margin: 0;
+        }
+
+        .assignment-lists {
+            margin: auto;
+            justify-content: space-around;
+            display: flex;
+            padding-bottom: 3rem;
+        }
+
+        .assignment-lists ol li {
+            padding: 0.5rem 0rem
+        }
+
+        .boton-volver {
+            border-radius: .5rem;
+            text-align: -webkit-center;
+        }
+
+        .boton-volver a {
+            text-decoration: none;
+            color: #fffffe;
+            font-weight: bold;
+
+            letter-spacing: 0.5rem;
+        }
+
+        .contenido-volver {
+            background-color: #eebbc3;
+            font-size: medium;
+            padding: 1.5rem;
+            border-radius: .5rem;
+            border: 0.25rem;
+            font-size: xx-large;
+        }
+    </style>
+</head>
+
+<body style="background-color: #232946; padding: 0 !important; display: flex; flex-direction: column;">
+    <div class="assignment-lists"
+        style="background-color: white; flex-direction: column; margin: 0px 30rem; margin-top: 5rem;">
+        <div>
+            <h1 style="display: flex; place-content: space-around; background-color: white; margin-top:3rem;">JS
+                Assignments 2
+            </h1>
+        </div>
+        <div style="padding: 0 10rem; font-size: larger;">
+            <ol style="padding: 0;">
+                <li>
+                    <a href="../pages/js-Terminology-Definitions.html" style="text-decoration: none;">Read more about
+                        <strong>JS</strong> and try to answer as many questions as you can from the
+                        <strong> JS2 - Terminology & Definitions</strong> file, which you can find attached in the
+                        email.</a>
+                </li>
+                <li><a href="./assignments-w4.html" style="text-decoration: none;">Assignment (Rock Paper Scissors -
+                        UI):</a>
+                    <ol type="a">
+                        <li>
+                            In our UI, the player should be able to play the game by clicking on buttons rather than
+                            typing their answer in a prompt.
+                        </li>
+                        <li>
+                            For now, remove the logic that plays exactly five rounds.
+                        </li>
+                        <li>
+                            Create three buttons, one for each selection. Add an event listener to the buttons that call
+                            your playRound function with the correct playerSelection every time a button is clicked.
+                            (you can keep the console.logs for this step).
+                        </li>
+                        <li>
+                            Add a div for displaying results and change all of your console.logs into DOM methods.
+                        </li>
+                        <li>
+                            Display the running score, and announce a winner of the game once one player reaches 5
+                            points.
+                        </li>
+                    </ol>
+                </li>
+                <li><a href="./assignments-w3.html" style="text-decoration: none;">Assignment (Calculator):</a>
+                    <ol type="a">
+                        <li>
+                            Your calculator is going to contain functions for all of the basic math operators you
+                            typically
+                            find on simple calculators, so start by creating functions for the following items and
+                            testing
+                            them in your browser’s console.
+                            <ol type="a">
+                                <li>add</li>
+                                <li>subtract</li>
+                                <li>multiply</li>
+                                <li>divide</li>
+                            </ol>
+                        </li>
+                        <li>
+                            Create a new function <strong>operate</strong> that takes an operator and 2 numbers and then
+                            calls one of
+                            the above functions on the numbers.
+                        </li>
+                        <li>
+                            Create a basic HTML calculator with buttons for each digit, each of the above functions and
+                            an “Equals” key.
+                            <ol type=a>
+                                <li>
+                                    There should also be a display for the calculator
+                                </li>
+                                <li>
+                                    Add a “clear” button.
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            Create the functions that populate the display when you click the number buttons… you
+                            should be storing the ‘display value’ in a variable somewhere for use in the next step.
+                        </li>
+                        <li>
+                            Make the calculator work! You’ll need to store the first number that is input into the
+                            calculator when a user presses an operator, and also save which operation has been chosen
+                            and then <strong>operate()</strong> on them when the user presses the “=” key.
+                            <ol type="a">
+                                <li>
+                                    You should already have the code that can populate the display, so once
+                                    <strong>operate()</strong>
+                                    has been called, update the display with the ‘solution’ to the operation.
+                                </li>
+                                <li>
+                                    Figure out how to store all the values and call the operate function with them.
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            Gotchas: watch out for and fix these bugs if they show up in your code:
+                            <ol type="a">
+                                <li>
+                                    Users should be able to string together several operations and get the right answer,
+                                    with each pair of numbers being evaluated at a time. For example, 12 + 7 - 5 * 3 =
+                                    should yield 42. Here’s a good example of how it should look like.
+                                </li>
+                                <li>
+                                    Your calculator should not evaluate more than a single pair of numbers at a time.
+                                    Example: you press a number button (12), followed by an operator button (+), a
+                                    second number button (7), and finally a second operator button (-). Your calculator
+                                    should then do the following: first, evaluate the first pair of numbers (12 + 7),
+                                    second, display the result of that calculation (19), and finally, use that result
+                                    (19) as
+                                    the first number in your new calculation, along with the next operator (-).
+                                </li>
+                                <li>
+                                    You should round answers with long decimals so that they don’t overflow the
+                                    screen.
+                                </li>
+                                <li>
+                                    Pressing = before entering all of the numbers or an operator could cause problems!
+                                </li>
+                                <li>
+                                    Pressing “clear” should wipe out any existing data.. make sure the user is really
+                                    starting fresh after pressing “clear”
+                                </li>
+                                <li>
+                                    Display a snarky error message if the user tries to divide by 0… don’t let it crash
+                                    your
+                                    calculator!
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            Advanced: Users can get floating point numbers if they do the math required to get one, but
+                            they can’t type them in yet. Add a . button and let users input decimals! Make sure you
+                            don’t let them type more than one though: 12.3.56.5. It is hard to do math on these
+                            numbers. (disable the decimal button if there’s already one in the display)
+
+                        </li>
+                        <li>
+                            Advanced: Add a “backspace” button, so the user can undo if they click the wrong number.
+
+                        </li>
+                        <li>
+                            Advanced: Add keyboard support
+                        </li>
+                    </ol>
+                </li>
+            </ol>
+        </div>
+    </div>
+    <div class="boton-volver" style="padding-bottom: 5rem;">
+        <a href="../../index.html" class="">
+            <h3><span class="contenido-volver">back to homepage</span></h3>
+        </a>
+    </div>
+</body>
+
+</html>

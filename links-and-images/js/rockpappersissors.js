@@ -22,8 +22,6 @@ function roundSelection(rS) {
     addEventListeners();
 }
 
-
-
 function playerSelection(option) {
     document.getElementById("playerSelectionContainer").classList.toggle("hidden");
     let playerSelection = document.getElementById("playerSelection");
